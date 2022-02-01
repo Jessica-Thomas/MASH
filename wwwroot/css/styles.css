@@ -1,0 +1,57 @@
+/* Base Formatting */
+* { 
+    box-sizing: border-box;
+    margin: 0, 0;
+  }
+
+  header {
+      text-align: center;
+  }
+
+  body{
+    background-image: url('../images/paper.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Amatic SC', cursive;
+  }
+
+
+
+  /* Containers */
+
+  .body {
+    border: 3px solid black ;
+    border-radius: 10px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    width: 50%;
+    display: flex;
+    padding: 15px;
+  }
+
+  #form {
+    float: left;
+    clear: both;
+    padding: 10px;
+  }
+
+  #results {
+    float: right;
+    overflow: hidden;
+    padding: 10px;
+    clear: both;
+  }
+
+  /* .choices {
+  } */
+
+  /* Text Formatting */
+  h1 {
+      color: rgb(106, 8, 233);
+      font-size: 50px;
+      font-family: 'Special Elite', cursive;
+      margin: 0, 0;
+  }
+
+
+
