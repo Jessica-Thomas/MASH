@@ -13,37 +13,23 @@
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Amatic SC', cursive;
+    font-weight: 700;
   }
-
 
 
   /* Containers */
-
   .body {
     border: 3px solid black ;
     border-radius: 10px;
-    font-family: 'Amatic SC', cursive;
-    font-weight: 700;
-    width: 50%;
-    display: flex;
-    padding: 15px;
+    width: 100%;
   }
+
 
   #form {
-    float: left;
-    clear: both;
     padding: 10px;
+    align-content: center;
   }
 
-  #results {
-    float: right;
-    overflow: hidden;
-    padding: 10px;
-    clear: both;
-  }
-
-  /* .choices {
-  } */
 
   /* Text Formatting */
   h1 {

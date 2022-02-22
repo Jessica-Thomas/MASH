@@ -17,7 +17,6 @@ No special tools are needed to execute this application. Simply open the index.h
 
 ### Additional Features
 
-- Create an additional class which inherits one or more properties from its parent
 - Create a dictionary or list, populate it with several values, retrieve at least one value, and use it in your program
 - Implement a log that records errors, invalid inputs, or other important events and writes them to a text file
 - Read data from an external file, such as text, JSON, CSV, etc and use that data in your application

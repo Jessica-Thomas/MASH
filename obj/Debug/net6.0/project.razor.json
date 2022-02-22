@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/jessicathomas/Desktop/MASH/cs/MASH/MASH.csproj",
+  "FilePath": "/Users/jessicathomas/Desktop/MASH/MASH.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "6.0",
@@ -16298,37 +16298,22 @@
   "RootNamespace": "MASH",
   "Documents": [
     {
-      "FilePath": "/Users/jessicathomas/Desktop/MASH/cs/MASH/Views/_ViewStart.cshtml",
+      "FilePath": "/Users/jessicathomas/Desktop/MASH/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/jessicathomas/Desktop/MASH/cs/MASH/Views/Shared/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/jessicathomas/Desktop/MASH/cs/MASH/Views/Shared/Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/jessicathomas/Desktop/MASH/cs/MASH/Views/Home/Index.cshtml",
+      "FilePath": "/Users/jessicathomas/Desktop/MASH/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/jessicathomas/Desktop/MASH/cs/MASH/Views/Home/Privacy.cshtml",
+      "FilePath": "/Users/jessicathomas/Desktop/MASH/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/jessicathomas/Desktop/MASH/cs/MASH/Views/Shared/_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/jessicathomas/Desktop/MASH/cs/MASH/Views/_ViewImports.cshtml",
+      "FilePath": "/Users/jessicathomas/Desktop/MASH/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     }

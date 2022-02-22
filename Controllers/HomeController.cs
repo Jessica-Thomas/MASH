@@ -6,6 +6,20 @@ namespace MASH.Controllers;
 
 public class HomeController : Controller
 {
+
+    //create lists for storing selections and inputs for random selection
+    //List<string> HouseOptions = ["Mansion", "Apartment", "Shack", "House"];
+    List<string> SpouseOptions = new List<string>();
+    List<string> TransportOptions = new List<string>();
+    List<string> JobOptions = new List<string>();
+    List<string> PetOptions = new List<string>();
+
+
+    string UserSpouse;
+    string UserTransport;
+    string UserPet;
+    string UserCar;
+
     private readonly ILogger<HomeController> _logger;
 
     public HomeController(ILogger<HomeController> logger)
@@ -18,15 +32,5 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Privacy()
-    {
-        return View();
-    }
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-    }
 }
 
