@@ -1,6 +1,8 @@
 ﻿@using MASH
 @using MASH.Models
 
+@model MASH.Models.PageModel
+
 <head>
     <title>M.A.S.H.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,21 +29,15 @@
                     <h2 class="section-header">Life Partner</h2>
                     <ol>
                         <li>
-                            <select for="GoldSpouse" name="GoldSpouse">
+                            <select for="GoldSpouse" name="GoldSpouse" asp-items="@ViewBag.cities">
                                 <option value="">Derek Morgan</option>
                                 <option value="">Spencer Reid</option>
                                 <option value="">Penelope Garcia</option>
                                 <option value="">Emily Prentiss</option>
                             </select>
                         </li>
-                        <li>
-                            <select for="SilverSpouse" name="SilverSpouse">
-                                <option value="">Meredith Palmer</option>
-                                <option value="">Dwight Schrute</option>
-                                <option value="">Jan Levinson</option>
-                                <option value="">Kevin Mallone</option>
-                            </select>
-                        </li>
+                        <select asp-items="@Model.SilverSpouse" name="Text"></select>
+        
                         <li>
                             <select for="BronzeSpouse" name="BronzeSpouse">
                                 <option value="">Cersei Lannister</option>
