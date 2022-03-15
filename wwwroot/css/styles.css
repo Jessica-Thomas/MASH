@@ -12,8 +12,7 @@
     background-image: url('../images/paper.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Amatic SC', cursive;
-    font-weight: 700;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
   }
 
 
@@ -38,6 +37,11 @@
       font-family: 'Special Elite', cursive;
       margin: 0, 0;
   }
+
+h2 {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+}
 
 
 

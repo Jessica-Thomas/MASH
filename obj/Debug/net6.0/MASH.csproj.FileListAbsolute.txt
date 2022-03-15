@@ -57,7 +57,6 @@ C:\Users\Jessica\OneDrive\Desktop\Projects\MASH\bin\Debug\net6.0\MASH.runtimecon
 C:\Users\Jessica\OneDrive\Desktop\Projects\MASH\bin\Debug\net6.0\MASH.dll
 C:\Users\Jessica\OneDrive\Desktop\Projects\MASH\bin\Debug\net6.0\ref\MASH.dll
 C:\Users\Jessica\OneDrive\Desktop\Projects\MASH\bin\Debug\net6.0\MASH.pdb
-C:\Users\Jessica\OneDrive\Desktop\Projects\MASH\obj\Debug\net6.0\MASH.csproj.AssemblyReference.cache
 C:\Users\Jessica\OneDrive\Desktop\Projects\MASH\obj\Debug\net6.0\MASH.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Jessica\OneDrive\Desktop\Projects\MASH\obj\Debug\net6.0\MASH.AssemblyInfoInputs.cache
 C:\Users\Jessica\OneDrive\Desktop\Projects\MASH\obj\Debug\net6.0\MASH.AssemblyInfo.cs

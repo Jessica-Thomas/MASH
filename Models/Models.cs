@@ -7,14 +7,6 @@ namespace MASH.Models;
 
 public class PageModel
 {
-    public class Spouse 
-    { 
-        public string GoldSpouse { get; set; }
-        public string SilverSpouse { get; set; }
-        public string BronzeSpouse { get; set; }
-        public string UserSpouse { get; set; }
-    }
-
     public List<SelectListItem> SilverSpouse = new()
     {
         new SelectListItem { Value = "1", Text = "Meredith Palmer" },
@@ -22,7 +14,6 @@ public class PageModel
         new SelectListItem { Value = "3", Text = "Jan Levinson" },
         new SelectListItem { Value = "4", Text = "Kevin Mallone" }
     };
-
 
     public List<SelectListItem> GoldSpouse = new()
     {
@@ -40,9 +31,18 @@ public class PageModel
         new SelectListItem { Value = "4", Text = "Toby Flenderson" }
     };
 
-        ViewBag.GoldSpouse = GoldSpouse;
-        ViewBag.SilverSpouse = SilverSpouse;
-        ViewBag.BronzeSpouse = BronzeSpouse;
+
+    public class Spouse 
+    { 
+        public string? GoldSpouse { get; set; }
+        public string? SilverSpouse { get; set; }
+        public string? BronzeSpouse { get; set; }
+        public string? UserSpouse { get; set; }
+    }
+
+       //ViewBag.GoldSpouse = GoldSpouse;
+       //ViewBag.SilverSpouse = SilverSpouse;
+       //ViewBag.BronzeSpouse = BronzeSpouse;
 }
        
 

@@ -28,9 +28,9 @@
                 <div id="spouse" class="box box1">
                     <h2 class="section-header">Life Partner</h2>
 
-                    <select for="SilverSpouse" name="SilverSpouse" asp-items="@ViewBag.SilverSpouse"> </select>
-                    <select for="GoldSpouse" name="GoldSpouse" asp-items="@ViewBag.GoldSpouse"> </select>
-                    <select for="BronzeSpouse" name="BronzeSpouse" asp-items="@ViewBag.BronzeSpouse"> </select>
+                    <select name="SilverSpouse" asp-items="@Model.SilverSpouse"></select>
+                    <select name="GoldSpouse" asp-items="@Model.GoldSpouse"></select>
+                    <select name="BronzeSpouse" asp-items="@Model.BronzeSpouse"></select>
                     <input type="text" id="UserSpouse" name="UserSpouse" required />
 
                 </div>
