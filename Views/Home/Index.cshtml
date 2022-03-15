@@ -23,33 +23,16 @@
 
     <main class="body">
         <div id="form" class="grid">
-            <form class="choices" action="form1" method="post">
+            <form class="choices" asp-controller="" asp-action="" method="post">
 
                 <div id="spouse" class="box box1">
                     <h2 class="section-header">Life Partner</h2>
-                    <ol>
-                        <li>
-                            <select for="GoldSpouse" name="GoldSpouse" asp-items="@ViewBag.cities">
-                                <option value="">Derek Morgan</option>
-                                <option value="">Spencer Reid</option>
-                                <option value="">Penelope Garcia</option>
-                                <option value="">Emily Prentiss</option>
-                            </select>
-                        </li>
-                        <select asp-items="@Model.SilverSpouse" name="Text"></select>
-        
-                        <li>
-                            <select for="BronzeSpouse" name="BronzeSpouse">
-                                <option value="">Cersei Lannister</option>
-                                <option value="">Gustavo Fring</option>
-                                <option value="">Hannibal Lector</option>
-                                <option value="">Toby Flenderson</option>
-                            </select>
-                        </li>
-                        <li>
-                            <input type="text" id="UserSpouse" name= "UserSpouse" required />
-                        </li>
-                    </ol>
+
+                    <select for="SilverSpouse" name="SilverSpouse" asp-items="@ViewBag.SilverSpouse"> </select>
+                    <select for="GoldSpouse" name="GoldSpouse" asp-items="@ViewBag.GoldSpouse"> </select>
+                    <select for="BronzeSpouse" name="BronzeSpouse" asp-items="@ViewBag.BronzeSpouse"> </select>
+                    <input type="text" id="UserSpouse" name="UserSpouse" required />
+
                 </div>
 
                 <div id="transportation" class="box">
