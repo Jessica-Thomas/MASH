@@ -2,18 +2,18 @@
 * {
     box-sizing: border-box;
     margin: 0, 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
   header {
       text-align: center;
   }
 
-  body{
+body {
     background-image: url('../images/paper.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-  }
+    font-family: 'Shadows Into Light', cursive;
+}
 
 
   /* Containers */
@@ -39,8 +39,7 @@
   }
 
 h2 {
-    font-family: 'Amatic SC', cursive;
-    font-weight: 700;
+    font-size: 30px;
 }
 
 

@@ -10,17 +10,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
-          rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400:700&family=Special+Elite&display=swap"
-          rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
     <header>
         <h1 class="">M.A.S.H.</h1>
-        <h2 class="">Let's determine your destiny.</h2>
+        <h2 class="body">Let's determine your destiny.</h2>
     </header>
 
     <main class="body">
@@ -37,7 +35,7 @@
 
                 </div>
 
-                <div id="transportation" class="box">
+                <div id="transportation" class="box box2">
                     <h2 class="section-header">Transportation</h2>
 
                     <select name="GoldTranspo" asp-items="@Model.GoldTranspoOptions"></select>
@@ -47,7 +45,7 @@
 
                 </div>
 
-                <div id="career" class="box box 3">
+                <div id="career" class="box box3">
                     <h2 class="section-header">Career</h2>
                     
                     <select name="SilverJob" asp-items="@Model.SilverJobOptions"></select>
@@ -57,7 +55,7 @@
 
                 </div>
 
-                <div id="pet" class="box">
+                <div id="pet" class="box box4">
                     <h2 class="section-header">Pet</h2>
                     
                     <select name="BronzePet" asp-items="@Model.BronzePetOptions"></select>
@@ -65,7 +63,6 @@
                     <select name="GoldPet" asp-items="@Model.GoldPetOptions"></select>
                     <select name="SilverPet" asp-items="@Model.SilverPetOptions"></select>
                     
-
                 </div>
 
                 <button type="submit">Your Future Awaits</button>
