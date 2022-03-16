@@ -1,8 +1,10 @@
 ﻿@using MASH
 @using MASH.Models
+@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
+
 
 @model MASH.Models.PageModel
-
+<html>
 <head>
     <title>M.A.S.H.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,112 +30,42 @@
                 <div id="spouse" class="box box1">
                     <h2 class="section-header">Life Partner</h2>
 
-                    <select name="SilverSpouse" asp-items="@Model.SilverSpouse"></select>
-                    <select name="GoldSpouse" asp-items="@Model.GoldSpouse"></select>
-                    <select name="BronzeSpouse" asp-items="@Model.BronzeSpouse"></select>
-                    <input type="text" id="UserSpouse" name="UserSpouse" required />
+                    <select name="SilverSpouse" asp-items="@Model.SilverSpouseOptions"></select>
+                    <select name="GoldSpouse" asp-items="@Model.GoldSpouseOptions"></select>
+                    <select name="BronzeSpouse" asp-items="@Model.BronzeSpouseOptions"></select>
+                    <input type="text" id="UserSpouse" name="UserSpouse" required/>
 
                 </div>
 
                 <div id="transportation" class="box">
                     <h2 class="section-header">Transportation</h2>
-                    <ol>
-                        <li>
-                            <select for="BronzeTranspo" name="BronzeTranspo">
-                                <option value="">Razor Scooter</option>
-                                <option value="">
-                                    Hanging Out The Side of Your Best Friend's Ride
-                                </option>
-                                <option value="">Rollerblades</option>
-                                <option value="">City Bus</option>
-                            </select>
-                        </li>
-                        <li>
-                            <select for="GoldTranspo" name="GoldTranspo">
-                                <option value="">Maserati</option>
-                                <option value="">Aston Martin</option>
-                                <option value="">Ferarri</option>
-                                <option value="">Lamborghini</option>
-                            </select>
-                        </li>
-                        <li>
-                            <input type="text" id="UserTranspo" name="UserTranspo" required />
-                        </li>
-                        <li>
-                            <select for="SilverTranspo" name="SilverTranspo">
-                                <option value="">Toyota</option>
-                                <option value="">Ford</option>
-                                <option value="">KIA</option>
-                                <option value="">Chevy</option>
-                            </select>
-                        </li>
-                    </ol>
+
+                    <select name="GoldTranspo" asp-items="@Model.GoldTranspoOptions"></select>
+                    <select name="BronzeTranspo" asp-items="@Model.BronzeTranspoOptions"></select>
+                    <select name="SilverTranspo" asp-items="@Model.SilverTranspoOptions"></select>
+                    <input type="text" id="UserTranspo" name="UserTranspo" required/>
+
                 </div>
 
                 <div id="career" class="box box 3">
                     <h2 class="section-header">Career</h2>
-                    <ol>
-                        <li>
-                            <input type="text" id="UserJob" name="UserJob" required />
-                        </li>
-                        <li>
-                            <select for="SilverJob" name="SilverJob">
-                                <option value="">News Anchor</option>
-                                <option value="">Veterinarian</option>
-                                <option value="">Software Developer</option>
-                                <option value="">Pilot</option>
-                            </select>
-                        </li>
-                        <li>
-                            <select for="BronzeJob" name="BronzeJob">
-                                <option value="">Assistant to the Regional Manager</option>
-                                <option value="">Cashier</option>
-                                <option value="">Circus Clown</option>
-                                <option value="">Street Sweeper</option>
-                            </select>
-                        </li>
-                        <li>
-                            <select for="GoldJob" name="GoldJob">
-                                <option value="">Special Agent</option>
-                                <option value="">Mob Boss</option>
-                                <option value="">Drug Lord</option>
-                                <option value="">Music Mogul</option>
-                            </select>
-                        </li>
-                    </ol>
+                    
+                    <select name="SilverJob" asp-items="@Model.SilverJobOptions"></select>
+                    <input type="text" id="UserJob" name="UserJob" required/>
+                    <select name="GoldJob" asp-items="@Model.GoldJobOptions"></select>
+                    <select name="BronzeJob" asp-items="@Model.BronzeJobOptions"></select>
+
                 </div>
 
                 <div id="pet" class="box">
                     <h2 class="section-header">Pet</h2>
-                    <ol>
-                        <li>
-                            <select for="SilverPet" name="SilverPet">
-                                <option value="">Lemur</option>
-                                <option value="">Peacock</option>
-                                <option value="">Sloth</option>
-                                <option value="">Platypus</option>
-                            </select>
-                        </li>
-                        <li>
-                            <input type="text" id="UserPet" name="UserPet" required />
-                        </li>
-                        <li>
-                            <select for="GoldPet" name="GoldPet">
-                                <option value="">Tiger</option>
-                                <option value="">Bear</option>
-                                <option value="">Shark</option>
-                                <option value="">Gorilla</option>
-                            </select>
-                        </li>
-                        <li>
-                            <select for="BronzePet" name="BronzePet">
-                                <option value="">Cat</option>
-                                <option value="">Dog</option>
-                                <option value="">Hamster</option>
-                                <option value="">Fish</option>
-                            </select>
-                        </li>
-                    </ol>
+                    
+                    <select name="BronzePet" asp-items="@Model.BronzePetOptions"></select>
+                    <input type="text" id="UserPet" name="UserPet" required/>
+                    <select name="GoldPet" asp-items="@Model.GoldPetOptions"></select>
+                    <select name="SilverPet" asp-items="@Model.SilverPetOptions"></select>
+                    
+
                 </div>
 
                 <button type="submit">Your Future Awaits</button>
@@ -142,3 +74,4 @@
 
     </main>
 </body>
+</html>
