@@ -1,6 +1,8 @@
 ﻿@using MASH
 @using MASH.Models
 @addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, AuthoringTagHelpers
+
 
 @model MASH.Models.DestinyModel;
 
@@ -10,10 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
-          rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Special+Elite&display=swap"
-          rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 
@@ -24,14 +24,15 @@
     </header>
 
     <main class="body">
+     
+        <form asp-controller="Results" asp-action="chooseRandom" method="">
 
-        <div id="results">
-            <p>You will live in a:  @Html.DisplayText(MASH.Models.DestinyModel.randHouse)</p>
-            <p>You will marry: @Html.DisplayText(DestinyModel.randSpouse)</p>
-            <p>Your transportation is:  @Html.DisplayText(DestinyModel.randTranspo)</p>
-            <p>You will be a(n):  @Html.DisplayText(DestinyModel.randJob)</p>
-            <p>You will have a pet:  @Html.DisplayText(DestinyModel.randPet)</p>
-        </div>
+            <p >You will live in a:  @Html.DisplayText(Model.RandHouse)</p>
+            <p>You will marry: @Html.DisplayText(Model.RandSpouse)</p>
+            <p>Your transportation is:  @Html.DisplayText(Model.RandTranspo)</p>
+            <p>You will be a(n):  @Html.DisplayText(Model.RandJob)</p>
+            <p>You will have a pet:  @Html.DisplayText(Model.RandPet)</p>
+        </form>
 
     </main>
 </body>

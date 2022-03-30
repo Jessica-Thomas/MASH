@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
 using System.ComponentModel.DataAnnotations;
 
 namespace MASH.Models;
@@ -147,9 +145,9 @@ public class ResultsModel
 
 public class DestinyModel
 {
-    public string? randSpouse { get; set; }
-    public string? randJob { get; set; }
-    public string? randPet { get; set; }
-    public string? randTranspo { get; set; }
-    public string? randHouse { get; set; }
+    public string? RandSpouse { get; set; }
+    public string? RandJob { get; set; }
+    public string? RandPet { get; set; }
+    public string? RandTranspo { get; set; }
+    public string? RandHouse { get; set; }
 }

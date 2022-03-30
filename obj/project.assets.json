@@ -53,24 +53,31 @@
     ]
   },
   "packageFolders": {
-    "/Users/jessicathomas/.nuget/packages/": {}
+    "C:\\Users\\Jessica\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jessicathomas/Desktop/MASH/MASH.csproj",
+      "projectUniqueName": "C:\\Users\\Jessica\\OneDrive\\Desktop\\Projects\\MASH\\MASH.csproj",
       "projectName": "MASH",
-      "projectPath": "/Users/jessicathomas/Desktop/MASH/MASH.csproj",
-      "packagesPath": "/Users/jessicathomas/.nuget/packages/",
-      "outputPath": "/Users/jessicathomas/Desktop/MASH/obj/",
+      "projectPath": "C:\\Users\\Jessica\\OneDrive\\Desktop\\Projects\\MASH\\MASH.csproj",
+      "packagesPath": "C:\\Users\\Jessica\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jessica\\OneDrive\\Desktop\\Projects\\MASH\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/jessicathomas/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Jessica\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -112,7 +119,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.200/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

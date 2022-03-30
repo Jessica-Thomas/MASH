@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using MASH.Models;
 using Microsoft.AspNetCore.Mvc;
-using MASH.Models;
 
 
 namespace MASH.Controllers;
@@ -25,33 +21,69 @@ public class ResultsController : Controller
         return View();
     }
 
-    public string chooseRandom(List<string>? spouses, List<string>? jobs, List<string>? pets, List<string>? transpos, List<string>? houses)
+
+    /*    public IActionResult chooseRandom(List<string>? spouses, List<string>? jobs, List<string>? pets, List<string>? transpos, List<string>? houses, DestinyModel destinyModel)
+        {
+
+            string? randSpouse = spouses.OrderBy(s => Guid.NewGuid()).First();
+            string? randJob = jobs.OrderBy(j => Guid.NewGuid()).First();
+            string? randPet = pets.OrderBy(p => Guid.NewGuid()).First();
+            string? randTranspo = transpos.OrderBy(t => Guid.NewGuid()).First();
+            string? randHouse = houses.OrderBy(h => Guid.NewGuid()).First();
+
+            return ();
+        }*/
+    [HttpGet]
+    public IActionResult chooseRandom(List<string>? spouses, List<string>? jobs, List<string>? pets, List<string>? transpos, List<string>? houses)
     {
 
-        var randSpouse = spouses.OrderBy(s => Guid.NewGuid()).First();
-        var randJob = jobs.OrderBy(j => Guid.NewGuid()).First();
-        var randPet = pets.OrderBy(j => Guid.NewGuid()).First();
-        var randTranspo = transpos.OrderBy(j => Guid.NewGuid()).First();
-        var randHouse = houses.OrderBy(j => Guid.NewGuid()).First();
+        string? randSpouse = spouses.OrderBy(s => Guid.NewGuid()).First();
+        string? randJob = jobs.OrderBy(j => Guid.NewGuid()).First();
+        string? randPet = pets.OrderBy(p => Guid.NewGuid()).First();
+        string? randTranspo = transpos.OrderBy(t => Guid.NewGuid()).First();
+        string? randHouse = houses.OrderBy(h => Guid.NewGuid()).First();
 
+        chooseHouse(houses);
+        chooseJob(jobs);
+        choosePet(pets);
+        chooseTranspo(transpos);
+        chooseSpouse(spouses);
 
-        //var rnd = new Random();
-        //int spouse = rnd.Next(spouses.Count);
-        //int job = rnd.Next(jobs.Count);
-        //int pet = rnd.Next(pets.Count);
-        //int transpo = rnd.Next(transpos.Count);
-        //int house = rnd.Next(houses.Count);
 
         var destinyModel = new DestinyModel();
+        return View(destinyModel);
 
-        return randSpouse;
-        return randJob;
-        return randPet;
-        return randTranspo;
-        return randHouse;
     }
 
+    private static string chooseHouse(List<string>? houses)
+    {
+        string? randHouse = houses.OrderBy(h => Guid.NewGuid()).First();
+        return (randHouse);
+    }
 
+    private static string chooseTranspo(List<string>? transpos)
+    {
+        string? randTranspo = transpos.OrderBy(t => Guid.NewGuid()).First();
+        return (randTranspo);
+    }
+
+    private static string choosePet(List<string>? pets)
+    {
+        string? randPet = pets.OrderBy(p => Guid.NewGuid()).First();
+        return (randPet);
+    }
+
+    private static string chooseJob(List<string>? jobs)
+    {
+        string? randJob = jobs.OrderBy(j => Guid.NewGuid()).First();
+        return (randJob);
+    }
+
+    private static string chooseSpouse(List<string>? spouses)
+    {
+        string? randSpouse = spouses.OrderBy(s => Guid.NewGuid()).First();
+        return (randSpouse);
+    }
 
 }
 
