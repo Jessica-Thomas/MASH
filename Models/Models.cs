@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace MASH.Models;
 
@@ -85,7 +86,7 @@ public class PageModel
         new SelectListItem { Value = "Tiger", Text = "Tiger" },
         new SelectListItem { Value = "Bear", Text = "Bear" },
         new SelectListItem { Value = "Shark", Text = "Shark" },
-        new SelectListItem { Value = "Gorilla", Text = "Gorilla" }
+        new SelectListItem { Value = "Velociraptor", Text = "Velociraptor" }
     };
 
     public List<SelectListItem> SilverPetOptions = new()
@@ -103,33 +104,52 @@ public class PageModel
         new SelectListItem { Value = "Hamster", Text = "Hamster" },
         new SelectListItem { Value = "Fish", Text = "Fish" }
     };
+}
 
 
+public class ResultsModel
+{
 
     public string? GoldSpouse { get; set; }
     public string? SilverSpouse { get; set; }
     public string? BronzeSpouse { get; set; }
+
+    [Required]
+    [RegularExpression("[a-zA-Z]+")]
     public string? UserSpouse { get; set; }
+
 
     public string? GoldTranspo { get; set; }
     public string? SilverTranspo { get; set; }
     public string? BronzeTranspo { get; set; }
+
+    [Required]
+    [RegularExpression("[a-zA-Z]+")]
     public string? UserTranspo { get; set; }
 
 
     public string? GoldJob { get; set; }
     public string? SilverJob { get; set; }
     public string? BronzeJob { get; set; }
-    public string? UserJob { get; set; }
 
+    [Required]
+    [RegularExpression("[a-zA-Z]+")]
+    public string? UserJob { get; set; }
 
     public string? GoldPet { get; set; }
     public string? SilverPet { get; set; }
     public string? BronzePet { get; set; }
+    [Required]
+    [RegularExpression("[a-zA-Z]+")]
     public string? UserPet { get; set; }
-
 }
 
 
-
-
+public class DestinyModel
+{
+    public string? randSpouse { get; set; }
+    public string? randJob { get; set; }
+    public string? randPet { get; set; }
+    public string? randTranspo { get; set; }
+    public string? randHouse { get; set; }
+}

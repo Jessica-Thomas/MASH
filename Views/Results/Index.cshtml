@@ -1,6 +1,10 @@
 ﻿@using MASH
 @using MASH.Models
+@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
 
+@model MASH.Models.DestinyModel;
+
+<html>
 <head>
     <title>M.A.S.H.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,18 +20,17 @@
 <body>
     <header>
         <h1 class="">M.A.S.H.</h1>
-        <h2 class="">Let's determine your destiny.</h2>
+        <h2>Your Results Are In...</h2>
     </header>
 
     <main class="body">
 
         <div id="results">
-            <h2>Your Results...</h2>
-            <p>You will live in a: </p><br>
-            <p>You will marry: </p><br>
-            <p>Your transportation is: </p><br>
-            <p>You will be a(n): </p><br>
-            <p>You will have a pet: </p><br>
+            <p>You will live in a:  @Html.DisplayText(MASH.Models.DestinyModel.randHouse)</p>
+            <p>You will marry: @Html.DisplayText(DestinyModel.randSpouse)</p>
+            <p>Your transportation is:  @Html.DisplayText(DestinyModel.randTranspo)</p>
+            <p>You will be a(n):  @Html.DisplayText(DestinyModel.randJob)</p>
+            <p>You will have a pet:  @Html.DisplayText(DestinyModel.randPet)</p>
         </div>
 
     </main>

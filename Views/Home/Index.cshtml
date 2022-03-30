@@ -4,6 +4,7 @@
 
 
 @model MASH.Models.PageModel
+
 <html>
 <head>
     <title>M.A.S.H.</title>
@@ -11,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 
@@ -23,7 +24,7 @@
 
     <main class="body">
         <div id="form" class="grid">
-            <form class="choices" asp-controller="Submit" asp-action="" method="post">
+            <form class="choices" asp-controller="Results" asp-action="" method="post">
 
                 <div id="spouse" class="box box1">
                     <h2 class="section-header">Life Partner</h2>
@@ -31,7 +32,7 @@
                     <select name="SilverSpouse" asp-items="@Model.SilverSpouseOptions"></select>
                     <select name="GoldSpouse" asp-items="@Model.GoldSpouseOptions"></select>
                     <select name="BronzeSpouse" asp-items="@Model.BronzeSpouseOptions"></select>
-                    <input type="text" id="UserSpouse" name="UserSpouse" required/>
+                    <input type="text" id="UserSpouse" name="UserSpouse" required />
 
                 </div>
 
@@ -41,15 +42,15 @@
                     <select name="GoldTranspo" asp-items="@Model.GoldTranspoOptions"></select>
                     <select name="BronzeTranspo" asp-items="@Model.BronzeTranspoOptions"></select>
                     <select name="SilverTranspo" asp-items="@Model.SilverTranspoOptions"></select>
-                    <input type="text" id="UserTranspo" name="UserTranspo" required/>
+                    <input type="text" id="UserTranspo" name="UserTranspo" required />
 
                 </div>
 
                 <div id="career" class="box box3">
                     <h2 class="section-header">Career</h2>
-                    
+
                     <select name="SilverJob" asp-items="@Model.SilverJobOptions"></select>
-                    <input type="text" id="UserJob" name="UserJob" required/>
+                    <input type="text" id="UserJob" name="UserJob" required />
                     <select name="GoldJob" asp-items="@Model.GoldJobOptions"></select>
                     <select name="BronzeJob" asp-items="@Model.BronzeJobOptions"></select>
 
@@ -57,12 +58,12 @@
 
                 <div id="pet" class="box box4">
                     <h2 class="section-header">Pet</h2>
-                    
+
                     <select name="BronzePet" asp-items="@Model.BronzePetOptions"></select>
-                    <input type="text" id="UserPet" name="UserPet" required/>
+                    <input type="text" id="UserPet" name="UserPet" required />
                     <select name="GoldPet" asp-items="@Model.GoldPetOptions"></select>
                     <select name="SilverPet" asp-items="@Model.SilverPetOptions"></select>
-                    
+
                 </div>
 
                 <button type="submit">Your Future Awaits</button>
