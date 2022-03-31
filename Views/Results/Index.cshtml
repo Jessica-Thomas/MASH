@@ -1,6 +1,4 @@
-﻿@using MASH
-@using MASH.Models
-@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
+﻿@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
 @addTagHelper *, AuthoringTagHelpers
 
 
@@ -24,15 +22,33 @@
     </header>
 
     <main class="body">
-     
-        <form asp-controller="Results" asp-action="chooseRandom" method="">
 
-            <p >You will live in a:  @Html.DisplayText(Model.RandHouse)</p>
-            <p>You will marry: @Html.DisplayText(Model.RandSpouse)</p>
-            <p>Your transportation is:  @Html.DisplayText(Model.RandTranspo)</p>
-            <p>You will be a(n):  @Html.DisplayText(Model.RandJob)</p>
-            <p>You will have a pet:  @Html.DisplayText(Model.RandPet)</p>
-        </form>
+        <table>
+            <tr>
+                <td>You will live in a:  </td>
+                <td>   @Model.RandHouse</td>
+            </tr>
+
+            <tr>
+                <td>You will marry:  </td>
+                <td>   @Model.RandSpouse</td>
+            </tr>
+
+            <tr>
+                <td>Your transportation is:  </td>
+                <td>   @Model.RandTranspo</td>
+            </tr>
+
+            <tr>
+                <td>You will be a(n): </td>
+                <td>   @Model.RandJob</td>
+            </tr>
+            <tr>
+                <td>You will have a pet:  </td>
+                <td>   @Model.RandPet</td>
+            </tr>
+
+        </table>
 
     </main>
 </body>

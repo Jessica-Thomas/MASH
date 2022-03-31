@@ -113,7 +113,7 @@ public class ResultsModel
     public string? BronzeSpouse { get; set; }
 
     [Required]
-    [RegularExpression("[a-zA-Z]+")]
+    [RegularExpression(@"[a-zA-Z]+", ErrorMessage = "Spouse can only contain alpha characters")]
     public string? UserSpouse { get; set; }
 
 
@@ -122,7 +122,7 @@ public class ResultsModel
     public string? BronzeTranspo { get; set; }
 
     [Required]
-    [RegularExpression("[a-zA-Z]+")]
+    [RegularExpression(@"[a-zA-Z]+", ErrorMessage = "Transportation can only contain alpha characters")]
     public string? UserTranspo { get; set; }
 
 
@@ -130,15 +130,16 @@ public class ResultsModel
     public string? SilverJob { get; set; }
     public string? BronzeJob { get; set; }
 
-    [Required]
-    [RegularExpression("[a-zA-Z]+")]
+    [Required(ErrorMessage = "You must input a job.")]
+    [RegularExpression(@"[a-zA-Z]+", ErrorMessage = "Job can only contain alpha characters")]
     public string? UserJob { get; set; }
 
     public string? GoldPet { get; set; }
     public string? SilverPet { get; set; }
     public string? BronzePet { get; set; }
+
     [Required]
-    [RegularExpression("[a-zA-Z]+")]
+    [RegularExpression(@"[a-zA-Z]+", ErrorMessage = "Pet can only contain alpha characters")]
     public string? UserPet { get; set; }
 }
 

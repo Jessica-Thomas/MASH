@@ -4,43 +4,40 @@
     margin: 0, 0;
 }
 
-  header {
-      text-align: center;
-  }
+header {
+    text-align: center;
+}
 
 body {
     background-image: url('../images/paper.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Shadows Into Light', cursive;
+    font-size: 35px;
+}
+
+#form {
+    padding: 10px;
 }
 
 
-  /* Containers */
-  .body {
-    border: 3px solid black ;
-    border-radius: 10px;
-    width: 100%;
-  }
 
 
-  #form {
-    padding: 10px;
-    align-content: center;
-  }
-
-
-  /* Text Formatting */
-  h1 {
-      color: rgb(106, 8, 233);
-      font-size: 50px;
-      font-family: 'Special Elite', cursive;
-      margin: 0, 0;
-  }
+/* Text Formatting */
+h1 {
+    color: rgb(106, 8, 233);
+    font-size: 50px;
+    font-family: 'Special Elite', cursive;
+    margin: 0, 0;
+}
 
 h2 {
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 10px;
 }
 
 
-
+td {
+    font-size: 25px;
+}

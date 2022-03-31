@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "B4HLuLmX4G4VIzpgY16KtUWqHssWYatBcoVHmVmTZDp6pqgXRzC/Xp4AlMs0NpKUUC08CcbSM293QGZ0mvPGBQ==",
+  "dgSpecHash": "rJpY1DuK1WPSXXO92Ydm6k9/jqNvGcYLJD4NNQSvs3C4NWf8i+1MrCtH408Sxo3ncAlc+D1Mo6LCmyvRORRZ4w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jessica\\OneDrive\\Desktop\\Projects\\MASH\\MASH.csproj",
+  "projectFilePath": "/Users/jessicathomas/Desktop/MASH/MASH.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Jessica\\.nuget\\packages\\jquery\\1.8.0\\jquery.1.8.0.nupkg.sha512",
-    "C:\\Users\\Jessica\\.nuget\\packages\\microsoft.jquery.unobtrusive.ajax\\3.2.6\\microsoft.jquery.unobtrusive.ajax.3.2.6.nupkg.sha512"
+    "/Users/jessicathomas/.nuget/packages/jquery/1.8.0/jquery.1.8.0.nupkg.sha512",
+    "/Users/jessicathomas/.nuget/packages/microsoft.jquery.unobtrusive.ajax/3.2.6/microsoft.jquery.unobtrusive.ajax.3.2.6.nupkg.sha512"
   ],
   "logs": []
 }

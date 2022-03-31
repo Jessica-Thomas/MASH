@@ -3,6 +3,7 @@
 @addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
 
 
+
 @model MASH.Models.PageModel
 
 <html>
@@ -32,7 +33,7 @@
                     <select name="SilverSpouse" asp-items="@Model.SilverSpouseOptions"></select>
                     <select name="GoldSpouse" asp-items="@Model.GoldSpouseOptions"></select>
                     <select name="BronzeSpouse" asp-items="@Model.BronzeSpouseOptions"></select>
-                    <input type="text" id="UserSpouse" name="UserSpouse" required />
+                    <input type="text" id="UserSpouse" name="UserSpouse" />
 
                 </div>
 
@@ -42,7 +43,7 @@
                     <select name="GoldTranspo" asp-items="@Model.GoldTranspoOptions"></select>
                     <select name="BronzeTranspo" asp-items="@Model.BronzeTranspoOptions"></select>
                     <select name="SilverTranspo" asp-items="@Model.SilverTranspoOptions"></select>
-                    <input type="text" id="UserTranspo" name="UserTranspo" required />
+                    <input type="text" id="UserTranspo" name="UserTranspo" />
 
                 </div>
 
@@ -50,7 +51,7 @@
                     <h2 class="section-header">Career</h2>
 
                     <select name="SilverJob" asp-items="@Model.SilverJobOptions"></select>
-                    <input type="text" id="UserJob" name="UserJob" required />
+                    <input type="text" id="UserJob" name="UserJob" />
                     <select name="GoldJob" asp-items="@Model.GoldJobOptions"></select>
                     <select name="BronzeJob" asp-items="@Model.BronzeJobOptions"></select>
 
@@ -60,7 +61,7 @@
                     <h2 class="section-header">Pet</h2>
 
                     <select name="BronzePet" asp-items="@Model.BronzePetOptions"></select>
-                    <input type="text" id="UserPet" name="UserPet" required />
+                    <input type="text" id="UserPet" name="UserPet" />
                     <select name="GoldPet" asp-items="@Model.GoldPetOptions"></select>
                     <select name="SilverPet" asp-items="@Model.SilverPetOptions"></select>
 
